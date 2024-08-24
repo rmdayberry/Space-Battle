@@ -32,11 +32,6 @@ function App() {
   return (
     <div>
       <Health playerHealth={playerHealth} enemyHealth={enemyHealth} />
-      <GameController
-        gameStatus={gameStatus}
-        onFire={handleFire}
-        onRestart={handleRestart}
-      />
     </div>
   );
 }
