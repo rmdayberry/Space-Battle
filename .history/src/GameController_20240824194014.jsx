@@ -1,5 +1,6 @@
 import React from "react";
 import "./GameController.css";
+import OutcomeMessage from "./OutcomeMessage";
 
 function GameController({ gameStatus, onFire, onRestart }) {
   const handleFireClick = () => {
@@ -15,7 +16,9 @@ function GameController({ gameStatus, onFire, onRestart }) {
       )}
       {gameStatus !== "playing" && <button onClick={onRestart}>Restart</button>}
       {gameStatus !== "playing" && (
-        <p className="outcomeMessage">{gameStatus.toUpperCase()}!</p>
+        <p>
+          <OutcomeMessage />
+        </p>
       )}
     </div>
   );

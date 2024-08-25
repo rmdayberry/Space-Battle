@@ -1,0 +1,11 @@
+.health-display {
+  margin: 20px 0;
+}
+.health-display p {
+  font-size: 20px;
+  margin: 5px 0;
+}
+.player-health {
+  border: 1px solid greenyellow;
+  padding: 1px 2px 1px 2px;
+}

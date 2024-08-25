@@ -15,14 +15,6 @@ function App() {
 
     setPlayerHealth(newPlayerHealth);
     setEnemyHealth(newEnemyHealth);
-
-    if (newPlayerHealth === 0 && newEnemyHealth === 0) {
-      setGameStatus("draw");
-    } else if (newPlayerHealth === 0) {
-      setGameStatus("lose");
-    } else if (newEnemyHealth === 0) {
-      setGameStatus("win");
-    }
   };
 
   const handleRestart = () => {

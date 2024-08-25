@@ -3,6 +3,7 @@ import "./App.css";
 import "./index.css";
 import Health from "./Health";
 import GameController from "./GameController";
+import OutcomeMessage from "./OutcomeMessage";
 
 function App() {
   const [playerHealth, setPlayerHealth] = useState(100);

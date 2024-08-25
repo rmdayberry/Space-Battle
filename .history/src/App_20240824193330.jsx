@@ -3,6 +3,7 @@ import "./App.css";
 import "./index.css";
 import Health from "./Health";
 import GameController from "./GameController";
+import OutcomeMessage from "./OutcomeMessage";
 
 function App() {
   const [playerHealth, setPlayerHealth] = useState(100);
@@ -33,6 +34,7 @@ function App() {
   return (
     <div>
       <h1>Space Battle Simulator</h1>
+      <OutcomeMessage gameStatus={gameStatus} />
       <Health playerHealth={playerHealth} enemyHealth={enemyHealth} />
       <GameController
         gameStatus={gameStatus}

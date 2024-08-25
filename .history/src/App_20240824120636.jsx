@@ -19,7 +19,7 @@ function App() {
     if (newPlayerHealth === 0 && newEnemyHealth === 0) {
       setGameStatus("draw");
     } else if (newPlayerHealth === 0) {
-      setGameStatus("lose");
+      setGameStatus("loss");
     } else if (newEnemyHealth === 0) {
       setGameStatus("win");
     }

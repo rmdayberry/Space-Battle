@@ -15,7 +15,7 @@ function GameController({ gameStatus, onFire, onRestart }) {
       )}
       {gameStatus !== "playing" && <button onClick={onRestart}>Restart</button>}
       {gameStatus !== "playing" && (
-        <p className="outcomeMessage">{gameStatus.toUpperCase()}!</p>
+        <p className="outcomeMesage">{gameStatus.toUpperCase()}!</p>
       )}
     </div>
   );
